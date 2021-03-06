@@ -1,0 +1,39 @@
+.Game{
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.Result{
+  color:crimson;
+  background-color: black;
+}
+
+button.square[data-pro="X"]
+{
+  color: crimson;
+  background-color: black;
+}
+
+button.square[data-pro="O"]
+{
+  color:black;
+  background-color:crimson;
+}
+
+.Reset{
+  color:crimson;
+  background-color:black;
+  opacity:10;
+}
+
+.History{
+  color:black;
+  background-color:crimson;
+  border-color: black;
+
+}
