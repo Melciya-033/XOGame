@@ -37,13 +37,16 @@ function Game() {
         <Column gap={20}>
        
        <Board board={current}  onClick ={handleClick}  />
-       <button className="Reset" onClick ={reset}>Reset</button>
+      
+      <button className="Reset" onClick ={reset}>Reset</button>
+
        </Column>
        <Column gap={20}> 
        <div className="Result">{
        winner
-       ? `Winnner ${winner}`
-        : `Next player ${xIsNext ? 'X' :'O'}`}
+       ? `Winnner: ${winner}`
+       : `Next player: ${xIsNext ? 'X' :'O'}`
+       }
         </div>
         
 <Log history={gameState.history}jumpTo={jumpTo}/>

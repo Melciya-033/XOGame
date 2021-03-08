@@ -1,4 +1,5 @@
 
+import { deflateRaw } from "node:zlib";
 import { useState } from "react";
 
 export type Value ='X'|'O'|null;
@@ -24,6 +25,9 @@ function calculateWinner(boardState:BoardState){
         const[a,b,c]=winningCombinations[i];
         if(boardState[a]&&boardState[a]===boardState[b]&&boardState[a]===boardState[c]){
             return boardState[a];
+        }
+        else if(!boardState.includes(null)){
+            return "Match draw";
         }
     }
     return null;

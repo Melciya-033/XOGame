@@ -10,7 +10,8 @@
 
 .Result{
   color:crimson;
-  background-color: black;
+  font-size: 30px;
+  font-family:  'Helvetica Neue';
 }
 
 button.square[data-pro="X"]
